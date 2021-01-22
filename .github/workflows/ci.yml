@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    name: Release and deploy to GitHub Pages
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node-version: [12.x]
+        os: [ubuntu-latest]
+    steps:
+      - name: Check repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup NodeJS ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install dependencies
+        run: yarn install --no-progress --non-interactive
+
+      - name: Run test coverage
+        run: yarn test --coverage
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Setup git config
+        run: |
+          git config --global user.name $USER_NAME
+          git config --global user.email $USER_EMAIL
+          git remote set-url origin https://${GITHUB_TOKEN}@github.com/${REPOSITORY}
+      
+      # - name: Release
+      #   run: yarn release
+      
+      # - name: Deploy
+      #   run: |
+      #     git remote set-url origin https://${DEPLOY_ACCESS_TOKEN}@github.com/${REPOSITORY}
+      #     yarn deploy -m "${{ github.event.head_commit.message }}" 
+    env:
+      USER_NAME: 'github-actions[bot]'
+      USER_EMAIL: 'github-actions[bot]@users.noreply.github.com'
+      GITHUB_TOKEN: ${{ github.token }} #GITHUB_TOKEN is required for `release-it`
+      DEPLOY_ACCESS_TOKEN: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
+      REPOSITORY: ${{ github.repository }}

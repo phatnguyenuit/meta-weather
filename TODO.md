@@ -1,0 +1,21 @@
+# TODO
+
+- [x] Set up redux
+- [x] Set up redux-saga
+- [x] Redux saga modular
+- [x] Detect IP & Location
+- [x] Build axios service to call API
+- [x] Add toast (notistack)
+- [x] Configure paths
+- [x] Material UI
+- [x] Handle error when network error
+- [x] Handle responsive
+- [x] Unit test components
+- [x] Unit test container
+- [x] Unit test hooks
+- [x] Test coverage
+- [x] Unit test states
+- [ ] Upload to Cov
+- [ ] End to end test with Cypress
+- [ ] Setup Sentry
+- [ ] Write awesome README
