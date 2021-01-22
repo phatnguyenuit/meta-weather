@@ -50,10 +50,10 @@ jobs:
       # - name: Release
       #   run: yarn release
       
-      # - name: Deploy
-      #   run: |
-      #     git remote set-url origin https://${DEPLOY_ACCESS_TOKEN}@github.com/${REPOSITORY}
-      #     yarn deploy -m "${{ github.event.head_commit.message }}" 
+      - name: Deploy
+        run: |
+          git remote set-url origin https://${DEPLOY_ACCESS_TOKEN}@github.com/${REPOSITORY}
+          yarn deploy -m "${{ github.event.head_commit.message }}"
     env:
       USER_NAME: 'github-actions[bot]'
       USER_EMAIL: 'github-actions[bot]@users.noreply.github.com'
