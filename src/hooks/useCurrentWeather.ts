@@ -15,14 +15,21 @@ const selector = ({ ip, geoLocation }: RootState) => {
  */
 const useCurrentWeather = () => {
   const params = useLocationSearchParams();
-  const { data } = useSearchWeatherLocation(params?.value, params?.field);
+  const { data, loading: searchingWeatherLocation } = useSearchWeatherLocation(
+    params?.value,
+    params?.field,
+  );
   const woeid = useMemo(() => data?.[0]?.woeid, [data]);
   const weatherAtLocationState = useWeatherAtLocation(woeid);
   const ipLocationLoading = useShallowEqualSelector(selector);
 
   return {
     ...weatherAtLocationState,
-    loading: [weatherAtLocationState.loading, ipLocationLoading].some(Boolean),
+    loading: [
+      searchingWeatherLocation,
+      weatherAtLocationState.loading,
+      ipLocationLoading,
+    ].some(Boolean),
   };
 };
 
