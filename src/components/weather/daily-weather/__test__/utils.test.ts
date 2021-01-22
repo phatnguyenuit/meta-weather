@@ -2,6 +2,8 @@ import dayjs from 'dayjs';
 import { DATE_FORMAT, TIME_ZONE } from 'constants/common';
 import * as utils from '../utils';
 
+dayjs.tz.setDefault(TIME_ZONE);
+
 const date = dayjs();
 describe('formatDate', () => {
   test('should work', () => {
