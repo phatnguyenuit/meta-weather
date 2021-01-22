@@ -19,3 +19,4 @@
 - [x] Setup Sentry
 - [ ] End to end test with Cypress
 - [ ] Write awesome README
+- [ ] Error boundary
