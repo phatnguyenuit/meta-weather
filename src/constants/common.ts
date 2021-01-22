@@ -9,3 +9,4 @@ export const INVALID_WOEID_MESSAGE = 'Invalid location ID';
 export const GEO_ACCESS_KEY = process.env.REACT_APP_GEO_ACCESS_KEY ?? '';
 export const META_WEATHER_PROXY_URL =
   process.env.REACT_APP_META_WEATHER_PROXY_URL ?? '';
+export const SENTRY_DSN = process.env.REACT_APP_SENTRY_DSN ?? '';

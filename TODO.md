@@ -15,7 +15,7 @@
 - [x] Unit test hooks
 - [x] Test coverage
 - [x] Unit test states
-- [ ] Upload to Cov
+- [x] Upload to Cov
+- [x] Setup Sentry
 - [ ] End to end test with Cypress
-- [ ] Setup Sentry
 - [ ] Write awesome README
