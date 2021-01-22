@@ -6,11 +6,13 @@ import * as Sentry from '@sentry/react';
 import App from './App';
 import { SENTRY_DSN } from './constants/common';
 import reportWebVitals from './reportWebVitals';
+import pkg from '../package.json';
 import './index.css';
 
 Sentry.init({
   dsn: SENTRY_DSN,
   autoSessionTracking: true,
+  release: `${pkg.name}-${pkg.version}`,
   integrations: [new Integrations.BrowserTracing()],
 
   // We recommend adjusting this value in production, or using tracesSampler

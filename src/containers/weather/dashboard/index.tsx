@@ -14,6 +14,7 @@ export const DashboardComponent: React.FC = () => {
 
   // Refresh weather at location
   useResetWeatherAtLocation();
+
   return (
     <Box data-testid="Dashboard" className={classes.root}>
       {(loading || !isMounted) && <LoadingPage />}
