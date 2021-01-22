@@ -1,4 +1,4 @@
-# Fast Weather
+# Meta Weather
 
 ![CI/CD](https://github.com/phatnguyenuit/meta-weather/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/phatnguyenuit/meta-weather/branch/master/graph/badge.svg?token=ETVJi0PZ7b)](https://codecov.io/gh/phatnguyenuit/meta-weather)
