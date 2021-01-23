@@ -1,7 +1,7 @@
 describe('dashboard', () => {
   beforeEach(function () {
-    cy.fixture('meta-weather/search-current-location').as('searchLocationData');
-    cy.fixture('meta-weather/weather-at-location').as('weatherAtLocationData');
+    cy.fixture('meta-weather/current-location').as('currentLocations');
+    cy.fixture('meta-weather/curent-weather').as('weatherAtLocationData');
     cy.visit(Cypress.env('host'));
 
     cy.intercept(
@@ -25,7 +25,7 @@ describe('dashboard', () => {
         method: 'GET',
         url: '/location/search',
       },
-      { fixture: 'meta-weather/search-current-location' },
+      { fixture: 'meta-weather/current-location' },
     );
 
     cy.intercept(
@@ -33,14 +33,14 @@ describe('dashboard', () => {
         method: 'GET',
         url: /\/location\/\d+/,
       },
-      { fixture: 'meta-weather/weather-at-location' },
+      { fixture: 'meta-weather/curent-weather' },
     );
   });
 
   it('should render dashboard', function () {
     cy.get('[data-testid="WeatherWidget"]').should(
       'contain.text',
-      this.searchLocationData[0].title,
+      this.currentLocations[0].title,
     );
     const { consolidated_weather } = this.weatherAtLocationData;
     cy.get('[data-testid="WeatherWidget"]').should(

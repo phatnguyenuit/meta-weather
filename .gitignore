@@ -27,3 +27,4 @@ yarn.lock
 
 # Custom
 cypress/integration/examples
+**/*.log
