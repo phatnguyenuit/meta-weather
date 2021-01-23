@@ -5,6 +5,6 @@ describe('App', () => {
   test('should render with crashing', () => {
     render(<App />);
     expect(screen.getByTestId('LoadingPage')).toBeVisible();
-    expect(screen.getByText(/weather app/gi)).toBeInTheDocument();
+    expect(screen.getByText(/meta weather/gi)).toBeInTheDocument();
   });
 });
