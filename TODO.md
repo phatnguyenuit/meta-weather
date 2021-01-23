@@ -19,4 +19,5 @@
 - [x] Setup Sentry
 - [x] Sentry Error boundary
 - [x] End to end test with Cypress
+- [x] Setup geolocation permissions with [cypress-browser-permissions](https://github.com/kamranayub/cypress-browser-permissions)
 - [ ] Write awesome README
