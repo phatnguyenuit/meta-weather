@@ -60,4 +60,3 @@ jobs:
       GITHUB_TOKEN: ${{ github.token }} #GITHUB_TOKEN is required for `release-it`
       DEPLOY_ACCESS_TOKEN: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
       REPOSITORY: ${{ github.repository }}
-      PUBLIC_URL: 'https://phatnguyenuit.github.io/meta-weather'
