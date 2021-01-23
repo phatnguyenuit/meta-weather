@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    name: Release and deploy to GitHub Pages
+    name: Test and deploy to GitHub Pages
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:

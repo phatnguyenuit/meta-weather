@@ -20,7 +20,12 @@ Sentry.init({
   tracesSampleRate: 0.2,
 });
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Sentry.ErrorBoundary fallback={'An error occurs'} showDialog>
+    <App />
+  </Sentry.ErrorBoundary>,
+  document.getElementById('root'),
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
