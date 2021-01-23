@@ -14,6 +14,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Features](#features)
+  - [Technologies](#technologies)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Code coverage](#code-coverage)
   - [Responsive](#responsive)
     - [Dashboard](#dashboard)
       - [On large screen](#on-large-screen)
@@ -38,6 +42,24 @@ This project inspired on building a weather forecast website. It's simple websit
 - Detect current location by: Geolocation API, IP.
 - Search city by keyword.
 - Show weather forecast in the next 5 days.
+
+## Technologies
+
+## Prerequisites
+
+## Installation
+
+## Code coverage
+
+Usage
+
+```sh
+$ yarn test --coverage --watchAll
+```
+
+**Current code coverage is `97%`**
+
+![Code-coverage-97-percent](./docs/code-coverage-97-percent.png)
 
 ## Responsive
 
