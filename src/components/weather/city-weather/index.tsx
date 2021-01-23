@@ -8,7 +8,6 @@ import useStyles from './styles';
 export const CityWeatherComponent: React.FC<CityWeatherProps> = ({ data }) => {
   const classes = useStyles();
 
-  // TODO: Handle case invalid woeid
   const todayWeather = data.consolidated_weather[0];
   const weatherForecasts = data.consolidated_weather.slice(1);
   return (

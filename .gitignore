@@ -24,3 +24,10 @@ yarn-debug.log*
 yarn-error.log*
 yarn.lock
 .eslintcache
+
+# Custom
+**/*.log
+cypress/screenshots
+cypress/videos
+cypress/integration/examples
+cypress.env.json

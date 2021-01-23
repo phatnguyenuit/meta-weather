@@ -1,0 +1,22 @@
+{
+  "ip": "1.2.3.4",
+  "location": {
+    "country": "country",
+    "region": "",
+    "city": "city",
+    "lat": 1,
+    "lng": 1,
+    "postalCode": "",
+    "timezone": "+08:00",
+    "geonameId": 123
+  },
+  "as": {
+    "asn": 13335,
+    "name": "as name",
+    "route": "route number",
+    "domain": "domain",
+    "type": "Content"
+  },
+  "isp": "ISP name",
+  "connectionType": "connectionType"
+}

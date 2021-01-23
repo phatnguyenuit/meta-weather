@@ -18,5 +18,6 @@
 - [x] Upload to Cov
 - [x] Setup Sentry
 - [x] Sentry Error boundary
-- [ ] End to end test with Cypress
+- [x] End to end test with Cypress
+- [x] Setup geolocation permissions with [cypress-browser-permissions](https://github.com/kamranayub/cypress-browser-permissions)
 - [ ] Write awesome README

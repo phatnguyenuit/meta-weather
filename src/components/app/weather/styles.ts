@@ -4,7 +4,7 @@ const styles = (theme: Theme) =>
   createStyles({
     root: {
       position: 'relative',
-      padding: theme.spacing(2, 0),
+      margin: theme.spacing(2, 0),
       flexGrow: 1,
     },
     title: {

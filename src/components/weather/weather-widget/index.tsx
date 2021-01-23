@@ -14,7 +14,12 @@ export const WeatherWidgetComponent: React.FC<WeatherWidgetProps> = ({
 }) => {
   const classes = useStyles();
   return (
-    <Grid container justify="flex-start" alignItems="center">
+    <Grid
+      data-testid="WeatherWidget"
+      container
+      justify="flex-start"
+      alignItems="center"
+    >
       <Grid item sm xs={12} md="auto">
         <Grid container direction="column" alignItems="center">
           <Box textAlign="center">

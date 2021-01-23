@@ -41,7 +41,9 @@
     "release": "release-it",
     "type-check": "tsc --noEmit",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --spec \"cypress/integration/meta-weather/*\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -69,8 +71,11 @@
     "@types/react-redux": "^7.1.15",
     "@types/react-router-dom": "^5.1.7",
     "commitizen": "^4.2.2",
+    "cypress": "^6.3.0",
+    "cypress-browser-permissions": "^1.0.5",
     "cz-conventional-changelog": "3.3.0",
     "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-prettier": "^3.2.0",
     "gh-pages": "^3.1.0",
     "husky": "^4.3.8",
@@ -98,6 +103,7 @@
       "!**/*.d.ts",
       "!**/node_modules/**",
       "!**/coverage/**",
+      "!**/cypress/**",
       "!src/index.tsx",
       "!src/constants/**",
       "!src/routes/index.ts",
