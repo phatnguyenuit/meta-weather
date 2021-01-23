@@ -55,7 +55,7 @@ This project inspired on building a weather forecast website. Using [Meta Weathe
 
 ## Preview
 
-Deployed ✅ on on [Vercel](https://vercel.com/): ➡ [Click here to access!](https://meta-weather-seven.vercel.app)
+Deployed ✅ on [Vercel](https://vercel.com/): ➡ [Click here to access!](https://meta-weather-seven.vercel.app)
 
 ## Features
 
@@ -66,6 +66,8 @@ Deployed ✅ on on [Vercel](https://vercel.com/): ➡ [Click here to access!](ht
 - Monitor and manage error by `Sentry`
 - Automate workflow with `GitHub Actions`
 - Automate release versioning with `release-it`
+- Redux modular files structure
+- Custom hooks
 
 [Go to top ⏫](#meta-weather)
 
