@@ -22,6 +22,7 @@ const {
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+  // add browser permissions
   config = cypressBrowserPermissionsPlugin(on, config);
   return config;
 };
