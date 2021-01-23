@@ -13,10 +13,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [Meta Weather](#meta-weather)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
+  - [Preview](#preview)
   - [Features](#features)
   - [Flow diagram](#flow-diagram)
     - [Getting current weather based on user location](#getting-current-weather-based-on-user-location)
-  - [Technologies](#technologies)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Code coverage](#code-coverage)
@@ -25,7 +25,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
       - [Main UI to interact](#main-ui-to-interact)
       - [Chrome browser test runner](#chrome-browser-test-runner)
     - [Headless mode](#headless-mode)
-  - [Responsive](#responsive)
+  - [Technologies](#technologies)
+  - [Responsive UI](#responsive-ui)
     - [Dashboard](#dashboard)
       - [On large screen](#on-large-screen)
       - [On small screen](#on-small-screen)
@@ -46,9 +47,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Introduction
 
-This project inspired on building a weather forecast website. It's simple website includes some main features below
+This project inspired on building a weather forecast website. Using [Meta Weather Public API](http://metaweather.com/api/) to get weather forecast data.
+
+**Warning*: Cause of CORS issue on [Meta Weather Public API](http://metaweather.com/api/). So I decided to build a [simple proxy server](https://github.com/phatnguyenuit/meta-weather-proxy) to serve API data for my webapp.*
 
 [Go to top ⏫](#meta-weather)
+
+## Preview
+
+Deployed ✅ on on [Vercel](https://vercel.com/): ➡ https://meta-weather-seven.vercel.app
 
 ## Features
 
@@ -63,33 +70,6 @@ This project inspired on building a weather forecast website. It's simple websit
 ### Getting current weather based on user location
 
 ![Flow diagram for getting current weather based on user location](./doc/../docs/current-weather-flow-diagram.png)
-
-[Go to top ⏫](#meta-weather)
-
-## Technologies
-
-- [ReactJS](https://reactjs.org/docs/getting-started.html) - Main library for building UI with components approach
-- [React Hooks](https://reactjs.org/docs/hooks-intro.html) - Custom hooks to reuse logic
-- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale.
-- [Redux](https://redux.js.org/) - State Management
-- [Redux Saga](https://redux-saga.js.org/) - redux middleware providing application side effects like asynchronous data fetching
-- [Material UI](https://material-ui.com/) - React Components based on Material Design, higher customization
-- [React router](https://reactrouter.com/) - Supports router in ReactJS single page application
-- [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) - WebAPI supports Geolocation
-- [Jest](https://jestjs.io/) - delightful JavaScript Testing Framework with a focus on simplicity.
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - a very light-weight solution for testing React components
-- [Cypress](https://www.cypress.io/) - JavaScript End to end testing framework
-- [Sentry](https://sentry.io/) - Application Monitoring and Error Tracking Software
-- [GitHub Actions](https://github.com/features/actions) - Automate workflow in GitHub
-- [ESlint](https://eslint.org/) - JavaScript linter plugin
-- [Husky](https://github.com/typicode/husky) - Git hooks
-- [Lint staged](https://www.npmjs.com/package/lint-staged) - Lint staged git files and don't let 💩 slip into your code base
-- [Commitlint](https://commitlint.js.org/#/) - Lint commit messages
-- [Prettier](https://prettier.io/) - Code auto formatter
-- [Release-it](https://github.com/release-it/release-it) - Automate versioning and package publishing
-- [GitHub Pages](https://pages.github.com/) - Free GitHub place to serve static websites
-- [Codecov](https://about.codecov.io/) - Code coverage integration
-- [Vercel](https://vercel.com/) - the best place to deploy any frontend app
 
 [Go to top ⏫](#meta-weather)
 
@@ -190,7 +170,34 @@ $ yarn cy:open
 
 [Go to top ⏫](#meta-weather)
 
-## Responsive
+## Technologies
+
+- [ReactJS](https://reactjs.org/docs/getting-started.html) - Main library for building UI with components approach
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html) - Custom hooks to reuse logic
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale.
+- [Redux](https://redux.js.org/) - State Management
+- [Redux Saga](https://redux-saga.js.org/) - redux middleware providing application side effects like asynchronous data fetching
+- [Material UI](https://material-ui.com/) - React Components based on Material Design, higher customization
+- [React router](https://reactrouter.com/) - Supports router in ReactJS single page application
+- [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) - WebAPI supports Geolocation
+- [Jest](https://jestjs.io/) - delightful JavaScript Testing Framework with a focus on simplicity.
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - a very light-weight solution for testing React components
+- [Cypress](https://www.cypress.io/) - JavaScript End to end testing framework
+- [Sentry](https://sentry.io/) - Application Monitoring and Error Tracking Software
+- [GitHub Actions](https://github.com/features/actions) - Automate workflow in GitHub
+- [ESlint](https://eslint.org/) - JavaScript linter plugin
+- [Husky](https://github.com/typicode/husky) - Git hooks
+- [Lint staged](https://www.npmjs.com/package/lint-staged) - Lint staged git files and don't let 💩 slip into your code base
+- [Commitlint](https://commitlint.js.org/#/) - Lint commit messages
+- [Prettier](https://prettier.io/) - Code auto formatter
+- [Release-it](https://github.com/release-it/release-it) - Automate versioning and package publishing
+- [GitHub Pages](https://pages.github.com/) - Free GitHub place to serve static websites
+- [Codecov](https://about.codecov.io/) - Code coverage integration
+- [Vercel](https://vercel.com/) - the best place to deploy any frontend app
+
+[Go to top ⏫](#meta-weather)
+
+## Responsive UI
 
 [Go to top ⏫](#meta-weather)
 
