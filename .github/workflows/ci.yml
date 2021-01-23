@@ -34,7 +34,7 @@ jobs:
         run: yarn install --no-progress --non-interactive
 
       - name: Set default timezone
-        uses: actions/set-timezone-action@v1.1
+        uses: szenius/set-timezone@v1.0
         with:
           timezoneLinux: "Asia/Ho_Chi_Minh"
           timezoneMacos: "Asia/Ho_Chi_Minh"
