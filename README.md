@@ -20,6 +20,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Code coverage](#code-coverage)
+  - [End to end testing with Cypress](#end-to-end-testing-with-cypress)
+    - [GUI mode](#gui-mode)
+      - [Main UI to interact](#main-ui-to-interact)
+      - [Chrome browser test runner](#chrome-browser-test-runner)
+    - [Headless mode](#headless-mode)
   - [Responsive](#responsive)
     - [Dashboard](#dashboard)
       - [On large screen](#on-large-screen)
@@ -34,6 +39,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
       - [On small screen](#on-small-screen-2)
       - [On mobile screen](#on-mobile-screen-2)
   - [Learn More](#learn-more)
+  - [Changelog](#changelog)
+  - [License](#license)
 
 [Go to top ⏫](#meta-weather)
 
@@ -61,27 +68,28 @@ This project inspired on building a weather forecast website. It's simple websit
 
 ## Technologies
 
-- ReactJS (Hooks)
-- TypeScript
-- Redux
-- Redux Saga
-- Material UI
-- React router
-- Geolocation API
-- Test framework: Jest
-- Unit test library: React Testing Library
-- End to end testing library: Cypress
-- Sentry monitor
-- GitHub Actions
-- ESlint
-- Husky
-- Lint staged
-- Commitlint
-- Prettier
-- Release-it
-- GitHub Pages
-- Codecov
-- Vercel static website provider
+- [ReactJS](https://reactjs.org/docs/getting-started.html) - Main library for building UI with components approach
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html) - Custom hooks to reuse logic
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale.
+- [Redux](https://redux.js.org/) - State Management
+- [Redux Saga](https://redux-saga.js.org/) - redux middleware providing application side effects like asynchronous data fetching
+- [Material UI](https://material-ui.com/) - React Components based on Material Design, higher customization
+- [React router](https://reactrouter.com/) - Supports router in ReactJS single page application
+- [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) - WebAPI supports Geolocation
+- [Jest](https://jestjs.io/) - delightful JavaScript Testing Framework with a focus on simplicity.
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - a very light-weight solution for testing React components
+- [Cypress](https://www.cypress.io/) - JavaScript End to end testing framework
+- [Sentry](https://sentry.io/) - Application Monitoring and Error Tracking Software
+- [GitHub Actions](https://github.com/features/actions) - Automate workflow in GitHub
+- [ESlint](https://eslint.org/) - JavaScript linter plugin
+- [Husky](https://github.com/typicode/husky) - Git hooks
+- [Lint staged](https://www.npmjs.com/package/lint-staged) - Lint staged git files and don't let 💩 slip into your code base
+- [Commitlint](https://commitlint.js.org/#/) - Lint commit messages
+- [Prettier](https://prettier.io/) - Code auto formatter
+- [Release-it](https://github.com/release-it/release-it) - Automate versioning and package publishing
+- [GitHub Pages](https://pages.github.com/) - Free GitHub place to serve static websites
+- [Codecov](https://about.codecov.io/) - Code coverage integration
+- [Vercel](https://vercel.com/) - the best place to deploy any frontend app
 
 [Go to top ⏫](#meta-weather)
 
@@ -98,10 +106,10 @@ This project inspired on building a weather forecast website. It's simple websit
 
 ## Installation
 
-- Step 1: Open terminal on change directory to your cloned folder
+- Step 1: Open terminal on change directory to your clone folder
   
   ```sh
-  $ cd /some/where/you/cloned
+  $ cd path/to/some/where/you/clone
   ```
 
 - Step 2: Install `node_modules`
@@ -153,6 +161,32 @@ $ yarn test --coverage --watchAll
 **Current code coverage is `97%`**
 
 ![Code-coverage-97-percent](./docs/code-coverage-97-percent.png)
+
+[Go to top ⏫](#meta-weather)
+
+## End to end testing with Cypress
+
+### GUI mode
+
+```sh
+$ yarn cy:open
+```
+
+#### Main UI to interact
+
+![Cypress-GUI-mode](./docs/cypress-e2e-testing-gui.png)
+
+#### Chrome browser test runner
+
+![Cypress-Chrome](./docs/cypress-e2e-testing-chrome.png)
+
+### Headless mode
+
+```sh
+$ yarn cy:open
+```
+
+![Cypress-headless-mode](./docs/cypress-e2e-testing-headless.png)
 
 [Go to top ⏫](#meta-weather)
 
@@ -232,7 +266,7 @@ $ yarn test --coverage --watchAll
 
 - Getting started with [Material UI](https://material-ui.com/getting-started/installation/)
 
-- Getting started with [Sentry monitor][(https://material-ui.com/getting-started/installation/](https://sentry.io/))
+- Getting started with [Sentry][(https://material-ui.com/getting-started/installation/](https://sentry.io/))
 
 - Learn [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions)
 
@@ -243,3 +277,11 @@ $ yarn test --coverage --watchAll
 - Learn [Release-it](https://github.com/release-it/release-it)
 
 [Go to top ⏫](#meta-weather)
+
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md)
+
+## License
+
+[MIT](./LICENSE) © Phát Nguyễn (Fast)
