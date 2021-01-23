@@ -5,10 +5,10 @@ import isToday from 'dayjs/plugin/isToday';
 import isTomorrow from 'dayjs/plugin/isTomorrow';
 import { DATE_FORMAT, TIME_ZONE } from 'constants/common';
 
+dayjs.extend(isTomorrow);
+dayjs.extend(isToday);
 dayjs.extend(utc);
 dayjs.extend(timezone);
-dayjs.extend(isToday);
-dayjs.extend(isTomorrow);
 
 export const formatDate = (date: dayjs.ConfigType, format = DATE_FORMAT) => {
   return dayjs(date).format(format);
