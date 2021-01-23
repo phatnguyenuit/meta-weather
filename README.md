@@ -6,20 +6,84 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Table of content
+![Preview](./docs/images/dashboard/meta-weather-seven.vercel.app_weathers(large).png)
+
+## Table of Contents
 
 - [Meta Weather](#meta-weather)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
   - [Features](#features)
+  - [Responsive](#responsive)
+    - [Dashboard](#dashboard)
+      - [On large screen](#on-large-screen)
+      - [On small screen](#on-small-screen)
+      - [On mobile screen](#on-mobile-screen)
+    - [Search city page](#search-city-page)
+      - [On large screen](#on-large-screen-1)
+      - [On small screen](#on-small-screen-1)
+      - [On mobile screen](#on-mobile-screen-1)
+    - [City weather page](#city-weather-page)
+      - [On large screen](#on-large-screen-2)
+      - [On small screen](#on-small-screen-2)
+      - [On mobile screen](#on-mobile-screen-2)
   - [Learn More](#learn-more)
+
+## Introduction
+
+This project inspired on building a weather forecast website. It's simple website includes some main features below
 
 ## Features
 
 - Detect current location by: Geolocation API, IP.
 - Search city by keyword.
 - Show weather forecast in the next 5 days.
-- Responsive UI.
-- Modular Redux files structure
-- Custom hooks
+
+## Responsive
+
+### Dashboard
+
+#### On large screen
+
+![Large screen](./docs/images/dashboard/meta-weather-seven.vercel.app_weathers(large).png)
+
+#### On small screen
+
+![Small screen](./docs/images/dashboard/meta-weather-seven.vercel.app_weathers(small).png)
+
+#### On mobile screen
+
+![Mobile screen](./docs/images/dashboard/meta-weather-seven.vercel.app_weathers(extra-small).png)
+
+### Search city page
+
+#### On large screen
+
+![Large screen](./docs/images/search/meta-weather-seven.vercel.app_weathers(large).png)
+
+#### On small screen
+
+![Small screen](./docs/images/search/meta-weather-seven.vercel.app_weathers(small).png)
+
+#### On mobile screen
+
+![Mobile screen](./docs/images/search/meta-weather-seven.vercel.app_weathers(extra-small).png)
+
+### City weather page
+
+#### On large screen
+
+![Large screen](./docs/images/city/meta-weather-seven.vercel.app_weathers(large).png)
+
+#### On small screen
+
+![Small screen](./docs/images/city/meta-weather-seven.vercel.app_weathers(small).png)
+
+#### On mobile screen
+
+![Mobile screen](./docs/images/city/meta-weather-seven.vercel.app_weathers(extra-small).png)
+
+
 
 ## Learn More
 

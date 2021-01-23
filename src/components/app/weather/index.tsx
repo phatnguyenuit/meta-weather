@@ -40,7 +40,7 @@ export const WeatherAppComponent: React.FC = () => {
             to={generatePath(weatherPaths.dashboard().path)}
           >
             <Typography variant="h6" noWrap>
-              Weather App
+              Meta Weather
             </Typography>
           </Link>
           <div className={classes.grow} />
