@@ -1,5 +1,5 @@
 /* eslint-disable jest/valid-expect */
-describe('dashboard', () => {
+describe('weather-search', () => {
   const searchValue = 'san';
   beforeEach(function () {
     cy.fixture('meta-weather/search-location').as('searchLocationData');

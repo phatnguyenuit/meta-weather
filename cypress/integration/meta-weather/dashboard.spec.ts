@@ -1,7 +1,7 @@
 describe('dashboard', () => {
   beforeEach(function () {
     cy.fixture('meta-weather/current-location').as('currentLocations');
-    cy.fixture('meta-weather/curent-weather').as('weatherAtLocationData');
+    cy.fixture('meta-weather/current-weather').as('weatherAtLocationData');
     cy.visit(Cypress.env('host'));
 
     cy.intercept(
@@ -33,7 +33,7 @@ describe('dashboard', () => {
         method: 'GET',
         url: /\/location\/\d+/,
       },
-      { fixture: 'meta-weather/curent-weather' },
+      { fixture: 'meta-weather/current-weather' },
     );
   });
 

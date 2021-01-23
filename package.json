@@ -42,7 +42,8 @@
     "type-check": "tsc --noEmit",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --spec \"cypress/integration/meta-weather/*\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -80,8 +81,7 @@
     "husky": "^4.3.8",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
-    "release-it": "^14.2.2",
-    "start-server-and-test": "^1.11.7"
+    "release-it": "^14.2.2"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -103,6 +103,7 @@
       "!**/*.d.ts",
       "!**/node_modules/**",
       "!**/coverage/**",
+      "!**/cypress/**",
       "!src/index.tsx",
       "!src/constants/**",
       "!src/routes/index.ts",

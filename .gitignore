@@ -26,5 +26,8 @@ yarn.lock
 .eslintcache
 
 # Custom
-cypress/integration/examples
 **/*.log
+cypress/screenshots
+cypress/videos
+cypress/integration/examples
+cypress.env.json
