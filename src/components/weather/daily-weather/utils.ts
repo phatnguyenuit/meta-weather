@@ -10,8 +10,6 @@ dayjs.extend(timezone);
 dayjs.extend(isToday);
 dayjs.extend(isTomorrow);
 
-dayjs.tz.setDefault(TIME_ZONE);
-
 export const formatDate = (date: dayjs.ConfigType, format = DATE_FORMAT) => {
   return dayjs(date).format(format);
 };
@@ -22,6 +20,8 @@ export const computeDisplayDate = (
   tz = TIME_ZONE,
 ) => {
   const givenDate = dayjs.tz(date, tz);
+  // eslint-disable-next-line no-console
+  console.log('givenDate', givenDate.format(DATE_FORMAT));
   if (givenDate.isToday()) {
     return 'Today';
   }
@@ -29,5 +29,5 @@ export const computeDisplayDate = (
     return 'Tomorrow';
   }
 
-  return formatDate(date, format);
+  return formatDate(givenDate, format);
 };

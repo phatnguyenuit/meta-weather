@@ -1,13 +1,11 @@
 /* eslint-disable no-console */
 import dayjs from 'dayjs';
-import { DATE_FORMAT, TIME_ZONE } from 'constants/common';
+import { DATE_FORMAT } from 'constants/common';
 import * as utils from '../utils';
-
-dayjs.tz.setDefault(TIME_ZONE);
 
 describe('formatDate', () => {
   test('should work', () => {
-    const today = dayjs.tz(dayjs(), TIME_ZONE);
+    const today = dayjs();
     expect(utils.formatDate(today)).toEqual(today.format(DATE_FORMAT));
   });
 });
