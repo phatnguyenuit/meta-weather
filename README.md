@@ -80,6 +80,7 @@ This project inspired on building a weather forecast website. It's simple websit
 - Prettier
 - Release-it
 - GitHub Pages
+- Codecov
 - Vercel static website provider
 
 [Go to top ⏫](#meta-weather)
