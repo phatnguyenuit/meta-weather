@@ -15,7 +15,7 @@ export const formatDate = (date: dayjs.ConfigType, format = DATE_FORMAT) => {
 };
 
 export const computeDisplayDate = (
-  date: string,
+  date: dayjs.ConfigType,
   format = DATE_FORMAT,
   tz = TIME_ZONE,
 ) => {

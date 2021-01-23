@@ -4,27 +4,24 @@ import * as utils from '../utils';
 
 dayjs.tz.setDefault(TIME_ZONE);
 
-const date = dayjs();
+const today = dayjs.tz(dayjs(), TIME_ZONE);
 describe('formatDate', () => {
   test('should work', () => {
-    expect(utils.formatDate(date)).toEqual(date.format(DATE_FORMAT));
+    expect(utils.formatDate(today)).toEqual(today.format(DATE_FORMAT));
   });
 });
 
-const today = dayjs.tz(dayjs(), TIME_ZONE);
 describe('computeDisplayDate', () => {
   test('should return today', () => {
-    const dateStr = today.format('YYYY-MM-DD');
-    expect(utils.computeDisplayDate(dateStr)).toEqual('Today');
+    expect(utils.computeDisplayDate(today)).toEqual('Today');
   });
   test('should return tomorrow', () => {
-    const dateStr = today.add(1, 'day').format('YYYY-MM-DD');
-    expect(utils.computeDisplayDate(dateStr)).toEqual('Tomorrow');
+    const tomorrow = today.add(1, 'day');
+    expect(utils.computeDisplayDate(tomorrow)).toEqual('Tomorrow');
   });
   test('should return the formatted date', () => {
     const next2DaysDate = today.add(2, 'day');
-    const dateStr = next2DaysDate.format('YYYY-MM-DD');
-    expect(utils.computeDisplayDate(dateStr)).toEqual(
+    expect(utils.computeDisplayDate(next2DaysDate)).toEqual(
       next2DaysDate.format(DATE_FORMAT),
     );
   });
