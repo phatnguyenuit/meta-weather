@@ -10,6 +10,8 @@ dayjs.extend(timezone);
 dayjs.extend(isToday);
 dayjs.extend(isTomorrow);
 
+dayjs.tz.setDefault(TIME_ZONE);
+
 export const formatDate = (date: dayjs.ConfigType, format = DATE_FORMAT) => {
   return dayjs(date).format(format);
 };
