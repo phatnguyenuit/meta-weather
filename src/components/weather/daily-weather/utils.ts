@@ -20,8 +20,6 @@ export const computeDisplayDate = (
   tz = TIME_ZONE,
 ) => {
   const givenDate = dayjs.tz(date, tz);
-  // eslint-disable-next-line no-console
-  console.log('givenDate', givenDate.format(DATE_FORMAT));
   if (givenDate.isToday()) {
     return 'Today';
   }

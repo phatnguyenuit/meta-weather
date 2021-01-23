@@ -37,8 +37,8 @@ jobs:
         uses: szenius/set-timezone@v1.0
         with:
           timezoneLinux: "Asia/Ho_Chi_Minh"
-          timezoneMacos: "Asia/Ho_Chi_Minh"
-          timezoneWindows: "Asia/Ho_Chi_Minh"
+          # timezoneMacos: "Asia/Ho_Chi_Minh"
+          # timezoneWindows: "Asia/Ho_Chi_Minh"
 
       - name: Run test coverage
         run: yarn test --coverage
