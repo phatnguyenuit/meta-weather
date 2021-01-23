@@ -81,9 +81,9 @@ Deployed ✅ on [Vercel](https://vercel.com/): ➡ [Click here to access!](https
 
 ## Prerequisites
 
-- NodeJS from version `10` installed
-- Yarn
-- IDE (ex: Visual Studio Code)
+- [NodeJS](https://nodejs.org/en/) from version `10` installed
+- [Yarn](https://yarnpkg.com/) Package manager installed
+- IDE (ex: [Visual Studio Code](https://code.visualstudio.com/))
 - [Clone my meta-weather API proxy](https://github.com/phatnguyenuit/meta-weather-proxy) / create your own.
 - [Register and get your IP-Geolocation API access key](https://ip-geolocation.whoisxmlapi.com)
 - [Register and get Sentry DSN for your React project](https://sentry.io/)
