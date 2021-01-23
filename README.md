@@ -49,19 +49,23 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project inspired on building a weather forecast website. Using [Meta Weather Public API](http://metaweather.com/api/) to get weather forecast data.
 
-**Warning*: Cause of CORS issue on [Meta Weather Public API](http://metaweather.com/api/). So I decided to build a [simple proxy server](https://github.com/phatnguyenuit/meta-weather-proxy) to serve API data for my webapp.*
+**Warning*: Cause of CORS issue on [Meta Weather Public API](http://metaweather.com/api/), so I decided to build a [simple proxy server](https://github.com/phatnguyenuit/meta-weather-proxy) to serve API data for my webapp.*
 
 [Go to top ⏫](#meta-weather)
 
 ## Preview
 
-Deployed ✅ on on [Vercel](https://vercel.com/): ➡ https://meta-weather-seven.vercel.app
+Deployed ✅ on on [Vercel](https://vercel.com/): ➡ [Click here to access!](https://meta-weather-seven.vercel.app)
 
 ## Features
 
-- Detect current location by: Geolocation API, IP.
+- Get current weather forecast.
+- Detect current location by: `Geolocation API`, `IP`.
 - Search city by keyword.
 - Show weather forecast in the next 5 days.
+- Monitor and manage error by `Sentry`
+- Automate workflow with `GitHub Actions`
+- Automate release versioning with `release-it`
 
 [Go to top ⏫](#meta-weather)
 
