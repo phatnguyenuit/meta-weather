@@ -18,5 +18,5 @@
 - [x] Upload to Cov
 - [x] Setup Sentry
 - [x] Sentry Error boundary
-- [ ] End to end test with Cypress
+- [x] End to end test with Cypress
 - [ ] Write awesome README
