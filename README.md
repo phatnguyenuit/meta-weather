@@ -76,7 +76,7 @@ Deployed ✅ on [Vercel](https://vercel.com/): ➡ [Click here to access!](https
 
 ### Getting current weather based on user location
 
-![Flow diagram for getting current weather based on user location](./doc/../docs/current-weather-flow-diagram.png)
+![Flow diagram for getting current weather based on user location](./docs/images/current-weather-flow-diagram.png)
 
 [Go to top ⏫](#meta-weather)
 
@@ -147,7 +147,7 @@ $ yarn test --coverage --watchAll
 
 **Current code coverage is `97%`**
 
-![Code-coverage-97-percent](./docs/code-coverage-97-percent.png)
+![Code-coverage-97-percent](./docs/images/code-coverage-97-percent.png)
 
 [Go to top ⏫](#meta-weather)
 
@@ -184,11 +184,11 @@ $ yarn cy:open
 
 #### Main UI to interact
 
-![Cypress-GUI-mode](./docs/cypress-e2e-testing-gui.png)
+![Cypress-GUI-mode](./docs/images/cypress-e2e-testing-gui.png)
 
 #### Chrome browser test runner
 
-![Cypress-Chrome](./docs/cypress-e2e-testing-chrome.png)
+![Cypress-Chrome](./docs/images/cypress-e2e-testing-chrome.png)
 
 ### Headless mode
 
@@ -196,7 +196,7 @@ $ yarn cy:open
 $ yarn cy:open
 ```
 
-![Cypress-headless-mode](./docs/cypress-e2e-testing-headless.png)
+![Cypress-headless-mode](./docs/images/cypress-e2e-testing-headless.png)
 
 [Go to top ⏫](#meta-weather)
 
