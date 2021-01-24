@@ -21,6 +21,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [Installation](#installation)
   - [Code coverage](#code-coverage)
   - [End to end testing with Cypress](#end-to-end-testing-with-cypress)
+    - [Prepare environment](#prepare-environment)
     - [GUI mode](#gui-mode)
       - [Main UI to interact](#main-ui-to-interact)
       - [Chrome browser test runner](#chrome-browser-test-runner)
@@ -151,6 +152,29 @@ $ yarn test --coverage --watchAll
 [Go to top ⏫](#meta-weather)
 
 ## End to end testing with Cypress
+
+### Prepare environment
+
+- Create your own `cypress.env.json` from `cypress.env.json.example`
+
+```sh
+$ cp cypress.env.json.example cypress.env.json
+```
+
+```json
+{
+  "host": "
+    web host to test (can be your deployed url)
+    localhost can only use in cypress open not cypress run.
+    Use IP address of your local instead 
+    Example: 
+     - http://xxx.yyy.zz.tt:port
+     - https://www.your-website.com
+  "
+}
+```
+
+- In case you want to test browser permissions, you can refer to this package [cypress-browser-permissions](https://github.com/kamranayub/cypress-browser-permissions) to know how to override and set fixed permissions for each test case.
 
 ### GUI mode
 
