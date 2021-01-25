@@ -155,6 +155,8 @@ $ yarn test --coverage --watchAll
 
 ### Prepare environment
 
+- Install `Cypress` [system requires](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements).
+
 - Create your own `cypress.env.json` from `cypress.env.json.example`
 
 ```sh
