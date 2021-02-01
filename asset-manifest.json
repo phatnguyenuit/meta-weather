@@ -7,8 +7,8 @@
     "main.js.map": "/meta-weather/static/js/main.a3e0b825.chunk.js.map",
     "runtime-main.js": "/meta-weather/static/js/runtime-main.55b697bb.js",
     "runtime-main.js.map": "/meta-weather/static/js/runtime-main.55b697bb.js.map",
-    "static/js/3.b7c60279.chunk.js": "/meta-weather/static/js/3.b7c60279.chunk.js",
-    "static/js/3.b7c60279.chunk.js.map": "/meta-weather/static/js/3.b7c60279.chunk.js.map",
+    "static/js/3.2cd08228.chunk.js": "/meta-weather/static/js/3.2cd08228.chunk.js",
+    "static/js/3.2cd08228.chunk.js.map": "/meta-weather/static/js/3.2cd08228.chunk.js.map",
     "static/js/4.30cbbca4.chunk.js": "/meta-weather/static/js/4.30cbbca4.chunk.js",
     "static/js/4.30cbbca4.chunk.js.map": "/meta-weather/static/js/4.30cbbca4.chunk.js.map",
     "static/js/5.5bae88c5.chunk.js": "/meta-weather/static/js/5.5bae88c5.chunk.js",
@@ -21,11 +21,11 @@
     "static/js/8.dc19e056.chunk.js.map": "/meta-weather/static/js/8.dc19e056.chunk.js.map",
     "index.html": "/meta-weather/index.html",
     "static/css/main.0d183a93.chunk.css.map": "/meta-weather/static/css/main.0d183a93.chunk.css.map",
-    "static/js/3.b7c60279.chunk.js.LICENSE.txt": "/meta-weather/static/js/3.b7c60279.chunk.js.LICENSE.txt"
+    "static/js/3.2cd08228.chunk.js.LICENSE.txt": "/meta-weather/static/js/3.2cd08228.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.55b697bb.js",
-    "static/js/3.b7c60279.chunk.js",
+    "static/js/3.2cd08228.chunk.js",
     "static/css/main.0d183a93.chunk.css",
     "static/js/main.a3e0b825.chunk.js"
   ]
