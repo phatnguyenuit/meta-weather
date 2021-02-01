@@ -1,4 +1,4 @@
-const exhaustedSplitter = /[\s_-]/;
+const exhaustedSplitter = /[\s_-]|(?=[A-Z0-9])/;
 
 const createTransform = (
   splitter: string | RegExp,

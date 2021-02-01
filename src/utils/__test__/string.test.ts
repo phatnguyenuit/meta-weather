@@ -5,7 +5,7 @@ describe('string', () => {
     test.each`
       input                   | expected
       ${'this is an Example'} | ${'this-is-an-example'}
-      ${'abc_123'}            | ${'abc-123'}
+      ${'abc_123'}            | ${'abc-1-2-3'}
     `(
       'should return "$expected" when given "$input"',
       ({ expected, input }) => {
