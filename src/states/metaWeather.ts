@@ -114,10 +114,9 @@ const metaWeatherSlice = createSlice({
       searchWeatherLocationFailed,
     }) =>
       function* handleSearchWeatherLocation({ payload }) {
-        const res = (yield call(
-          service.search,
-          payload,
-        )) as BaseResponse<WeatherSearchLocationData>;
+        const res = (yield call(service.search, payload)) as BaseResponse<
+          WeatherSearchLocationData
+        >;
 
         if (isSuccessResponse(res)) {
           yield put(searchWeatherLocationSuccess(res.data));
@@ -130,10 +129,9 @@ const metaWeatherSlice = createSlice({
       getWeatherAtLocationFailed,
     }) =>
       function* handleGetWeatherAtLocation({ payload: woeid }) {
-        const res = (yield call(
-          service.get,
-          woeid,
-        )) as BaseResponse<WeatherAtLocationData>;
+        const res = (yield call(service.get, woeid)) as BaseResponse<
+          WeatherAtLocationData
+        >;
 
         if (isSuccessResponse(res)) {
           yield put(getWeatherAtLocationSuccess(res.data));

@@ -31,9 +31,9 @@ const ipSlice = createSlice({
   workers: {
     detectIp: ({ detectSuccess, detectFailed }) =>
       function* handleDetectIp() {
-        const res = (yield call(
-          service.detect,
-        )) as BaseResponse<IpResponseData>;
+        const res = (yield call(service.detect)) as BaseResponse<
+          IpResponseData
+        >;
 
         if (isSuccessResponse(res)) {
           yield put(detectSuccess(res.data));

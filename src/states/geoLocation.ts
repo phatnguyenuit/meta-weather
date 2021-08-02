@@ -34,10 +34,9 @@ const geoLocationSlice = createSlice({
   workers: {
     detectGeoLocation: ({ detectSuccess, detectFailed }) =>
       function* handleDetectGeoLocation({ payload: ip }) {
-        const res = (yield call(
-          service.detect,
-          ip,
-        )) as BaseResponse<LocationResponseData>;
+        const res = (yield call(service.detect, ip)) as BaseResponse<
+          LocationResponseData
+        >;
 
         if (isSuccessResponse(res)) {
           yield put(detectSuccess(res.data));

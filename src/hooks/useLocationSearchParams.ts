@@ -18,10 +18,9 @@ const useLocationSearchParams = () => {
   const { ip, detectIp, loading: ipDetecting } = useIp();
   const { detectLocationByIP, location: locationByIp } = useLocationByIP();
 
-  const [
-    locationSearchParams,
-    setLocationSearchParams,
-  ] = useState<SearchLocationPayload>();
+  const [locationSearchParams, setLocationSearchParams] = useState<
+    SearchLocationPayload
+  >();
 
   useEffect(() => {
     // Case 1: Detect local location provided by browser success
