@@ -108,18 +108,19 @@ describe('useLocationSearchParams', () => {
   });
 
   test('should return query params after detected location by ip', () => {
-    const testCity = 'Test City';
     mock_useIp.mockReturnValue(defaultIpValues);
     mock_useLocalLocation.mockReturnValue(defaultLocationByIpValues);
     mock_useLocationByIP.mockReturnValue({
       ...defaultLocationByIpValues,
       location: {
-        city: testCity,
+        city: 'example city',
+        lat: 'latitude',
+        lng: 'longitude',
       },
     });
 
     const { result } = setupTest();
-    expect(result.current).toHaveProperty('field', 'query');
-    expect(result.current).toHaveProperty('value', testCity);
+    expect(result.current).toHaveProperty('field', 'lattlong');
+    expect(result.current).toHaveProperty('value', `latitude,longitude`);
   });
 });

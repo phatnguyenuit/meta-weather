@@ -23,6 +23,7 @@ const useLocalLocation = () => {
 
   useEffect(() => {
     if (global.navigator.geolocation) {
+      toastService.notify('Detecting local location', 'info');
       global.navigator.geolocation.getCurrentPosition(
         handleGetLocationSuccess,
         handleGetLocationError,

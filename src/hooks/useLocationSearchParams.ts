@@ -62,8 +62,8 @@ const useLocationSearchParams = () => {
   useEffect(() => {
     if (locationByIp && !localLocation) {
       setLocationSearchParams({
-        field: 'query',
-        value: locationByIp.city,
+        field: 'lattlong',
+        value: `${locationByIp.lat},${locationByIp.lng}`,
       });
     }
   }, [localLocation, locationByIp]);
