@@ -21,3 +21,4 @@
 - [x] End to end test with Cypress
 - [x] Setup geolocation permissions with [cypress-browser-permissions](https://github.com/kamranayub/cypress-browser-permissions)
 - [x] Write awesome README
+- [ ] Refactor mock data for testing with [`MSW - Mock Service Woker`](https://mswjs.io/)
