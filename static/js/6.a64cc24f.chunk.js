@@ -1,2 +1,2 @@
 (this["webpackJsonpmeta-weather"]=this["webpackJsonpmeta-weather"]||[]).push([[6],{227:function(t,e,n){"use strict";n.r(e),n.d(e,"NotFoundComponent",(function(){return u}));var o=n(0),a=n(6),u=function(){return Object(a.jsx)("div",{"data-testid":"NotFound",children:"NotFound"})},d=Object(o.memo)(u);d.displayName="NotFound",e.default=d}}]);
-//# sourceMappingURL=6.9a1209c8.chunk.js.map
+//# sourceMappingURL=6.a64cc24f.chunk.js.map
